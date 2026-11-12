@@ -1,0 +1,559 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    background-color: #111827;
+    color: #f9fafb;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 8%;
+
+    background-color: #1f2937;
+}
+
+/* Logotipo */
+.logo {
+    color: #f9fafb;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #60a5fa;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+/* Links do menu */
+.menu a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: color 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.menu a:hover {
+    color: #60a5fa;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #9ca3af;
+}
+
+
+/* Seção principal */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+/* Conteúdo da apresentação */
+.hero-conteudo {
+    max-width: 700px;
+}
+
+/* Saudação */
+.hero-saudacao {
+    color: #60a5fa;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* Nome */
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+/* Profissão */
+.hero h2 {
+    color: #60a5fa;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Descrição */
+.hero-descricao {
+    color: #d1d5db;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+.hero-botoes {
+    display: flex;
+    gap: 15px;
+}
+
+/* Estilo geral dos botões */
+.botao {
+    padding: 13px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Botão principal */
+.botao-principal {
+    background-color: #2563eb;
+    color: white;
+}
+
+.botao-principal:hover {
+    background-color: #1d4ed8;
+}
+
+/* Botão secundário */
+.botao-secundario {
+    border: 1px solid #60a5fa;
+    color: #60a5fa;
+}
+
+.botao-secundario:hover {
+    background-color: #60a5fa;
+    color: #111827;
+}
+
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+
+    .cabecalho {
+        padding: 20px 5%;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+
+    .sobre {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 70px 5%;
+        gap: 35px;
+    }
+
+     .sobre-conteudo {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sobre-informacoes {
+        width: 100%;
+    }
+}
+
+
+/* Celulares */
+@media (max-width: 480px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 40px 6%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .hero-descricao {
+        font-size: 15px;
+    }
+
+    .hero-botoes {
+        flex-direction: column;
+    }
+
+    .botao {
+        text-align: center;
+    }
+
+}
+
+
+/* Seção Sobre Mim */
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+    padding: 100px 8%;
+
+    background-color: #1f2937;
+}
+
+/* Conteúdo da seção */
+.sobre-conteudo {
+    max-width: 500px;
+}
+
+/* Subtítulo */
+.sobre-subtitulo {
+    color: #60a5fa;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* Título */
+.sobre-conteudo h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+/* Parágrafos */
+.sobre-conteudo p {
+    color: #d1d5db;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Informações */
+.sobre-informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 400px;
+}
+
+/* Cards */
+.informacao-card {
+    background-color: #111827;
+    padding: 20px;
+    border-left: 3px solid #60a5fa;
+    border-radius: 5px;
+}
+
+/* Títulos dos cards */
+.informacao-card h3 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+/* Textos dos cards */
+.informacao-card p {
+    color: #f9fafb;
+    margin-bottom: 5px;
+}
+
+/* Informações complementares */
+.informacao-card span {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+
+/* Seção de habilidades */
+.habilidades {
+    padding: 100px 8%;
+    background-color: #111827;
+}
+
+/* Cabeçalho da seção */
+.habilidades-cabecalho {
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+/* Subtítulo */
+.habilidades-subtitulo {
+    color: #60a5fa;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* Título */
+.habilidades-cabecalho h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Descrição */
+.habilidades-cabecalho p:last-child {
+    color: #d1d5db;
+    line-height: 1.8;
+}
+
+/* Container dos cards */
+.habilidades-container {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+
+    gap: 20px;
+}
+
+/* Cards individuais */
+.habilidade-card {
+    background-color: #1f2937;
+    padding: 25px;
+    border-radius: 8px;
+    border-bottom: 3px solid #60a5fa;
+
+    transition: transform 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.habilidade-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Título dos cards */
+.habilidade-card h3 {
+    color: #60a5fa;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Descrição dos cards */
+.habilidade-card p {
+    color: #d1d5db;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Status */
+.habilidade-card span {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+
+/* Seção de projetos */
+.projetos {
+    padding: 100px 8%;
+    background-color: #1f2937;
+}
+
+.projeto-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.projeto-links a {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.projeto-links a:first-child {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.projeto-links a:last-child {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.projeto-links a:hover {
+  opacity: 0.8;
+}
+
+/* Cabeçalho */
+.projetos-cabecalho {
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+/* Subtítulo */
+.projetos-subtitulo {
+    color: #60a5fa;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* Título */
+.projetos-cabecalho h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Descrição */
+.projetos-cabecalho p:last-child {
+    color: #d1d5db;
+    line-height: 1.8;
+}
+
+/* Container dos projetos */
+.projetos-container {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(240px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+/* Card individual */
+.projeto-card {
+    background-color: #111827;
+    border-radius: 8px;
+    overflow: hidden;
+
+    transition: transform 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.projeto-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Área da imagem */
+.projeto-imagem {
+    height: 170px;
+    background-color: #263b5b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Número do projeto */
+.projeto-imagem span {
+    color: #60a5fa;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Conteúdo do card */
+.projeto-conteudo {
+    padding: 25px;
+}
+
+/* Título */
+.projeto-conteudo h3 {
+    color: #60a5fa;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+/* Descrição */
+.projeto-conteudo p {
+    color: #d1d5db;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Tecnologias */
+.projeto-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.projeto-tecnologias span {
+    background-color: #263b5b;
+    color: #bfdbfe;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Status */
+.projeto-status {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+/* Link para pular ao conteúdo */
+.pular-conteudo {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    z-index: 1000;
+    padding: 12px 18px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pular-conteudo:focus {
+    top: 10px;
+}
